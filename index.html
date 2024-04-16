@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animación de Cuadro con CSS</title>
+<style>
+  /* Definición del cuadro */
+  .cuadro {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    animation: mover 2s infinite alternate; /* Aplicando la animación */
+  }
+
+  /* Definición de la animación */
+  @keyframes mover {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: calc(100% - 100px); /* Movimiento hacia la derecha */
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="cuadro"></div>
+</body>
+</html>
